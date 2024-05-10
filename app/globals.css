@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --gradient-from: #3346ef; /* Start color */
+    --gradient-to: #b00bbc; /* End color */
+  }
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  
+}
+#hero-bg {
+  height: 100vh;
+  width: 100%;
+}
+.gradient-overlay {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1));
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, var(--gradient-from) 50%, var(--gradient-to));
+}
+.gradient-text {
+  background: linear-gradient(to right, var(--gradient-from) 50%, var(--gradient-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.half-transparent {
+  background : rgba(37, 35, 35, 0.5);
+}
+.gradient-border {
+  border-top-width: 1px; /* Border thickness */
+  border-style: solid; /* Border style (solid, dashed, etc.) */
+  border-image: linear-gradient(to right, var(--gradient-from), var(--gradient-to)) 1;
+  -webkit-border-image: -webkit-linear-gradient(left, var(--gradient-from), var(--gradient-to)) 1; /* For Webkit browsers */
+  border-image-slice: 1;
+  display: inline-block;
+
+}
+.box-sm-shadow {
+  box-shadow: 0 0 1px #fff;
+  width: fit-content;
+}
+.image-scale:hover div div div img {
+  transform: scale(1.5);
+  transition: all 0.5s linear;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+ 
+.navbar .sidebarOpenBtn,
+.sidebarCloseBtn, .bottom {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+  .navbar {
+      top: 0;
+      left:0;
+      height: 50px;
+  }
+  .nav-links {
+      position: absolute;
+      width: 100%;
+      max-width: 300px;
+      height: 100vh;
+      background-color: #000;
+      color: #fff;
+      top: 0;
+      right: -100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      list-style: none;
+      padding-top: 100px;
+      padding-left: 8px;
+      transition: all .5s linear;
+  }
+  .nav-links .top {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      display: flex;
+      width: calc(100%);
+      justify-content: right;
+      align-items: center;
+  }
+  .nav-links .top .nav-top-link {
+      padding: 10px 32px;
+      margin-bottom : 8px;
+  }
+  .nav-links .top .sidebarCloseBtn {
+    display: block;
+  }
+  .nav-links .bottom {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      display: flex;
+      justify-content: space-around;
+  }
+  .nav-links-open {
+      right: 0;
+  }
+  .nav-links .nav-link {
+      display: flex;
+      padding: 16px 0;
+      left: 8px;
+      font-size: 24px;
+      letter-spacing: 5px;
+      padding-left: 8px;
+      position: relative;
+  }
+  .nav-link:nth-child(1) {
+    margin-top: 32px;
+  }
+  .nav-link span {
+    position: absolute;
+    top: -10px;
+    right: -35%;
+    text-align: right;
+    background: none;
+    color:#ee00ff;
+  }
+  .nav-link:nth-child(2) span {
+    right: -75%;
+  }
+ 
+  .navbar .sidebarOpenBtn {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+  }
+}
