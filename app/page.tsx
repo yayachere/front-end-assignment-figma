@@ -64,16 +64,16 @@ export default function Home() {
             {/* Links */}
             <div className="nav-links flex md:space-x-12 lg:space-x-16">
               
-                <a href="#" className="nav-link text-white sm:text-lg md:text-xs hover:text-gray-300 py-2">
-                  <img src="/images/Creon Pass.png" className='h-3' />
+                <a href="#" className="nav-link text-white py-2">
+                  <img src="/images/Creon Pass.png" className='h-5 lg:h-3' />
                 </a>
-                <a href="#" className="nav-link text-white sm:text-lg md:text-xs lg:text-xs hover:text-gray-300 p-2">Token 
+                <a href="#" className="nav-link text-white sm:text-md md:text-xs lg:text-xs hover:text-gray-300 p-2">Token 
                   <span className="absolute bottom-8 md:bg-black mx-1 px-1 rounded-xl md:text-gray-300 px-2">soon</span>
                 </a>
-                <a href="#" className="nav-link text-white sm:text-lg md:text-xs lg:text-xs hover:text-gray-300 p-2">AI Revenue 
+                <a href="#" className="nav-link text-white sm:text-md md:text-xs lg:text-xs hover:text-gray-300 p-2">AI Revenue 
                   <span className="absolute bottom-8 md:bg-black mx-1 px-1 rounded-xl md:text-gray-300 px-2">soon</span>
                 </a>
-                <a href="#" className="nav-link text-white sm:text-lg md:text-xs lg:text-xs hover:text-gray-300 p-2">AI Launchpad 
+                <a href="#" className="nav-link text-white sm:text-md md:text-xs lg:text-xs hover:text-gray-300 p-2">AI Launchpad 
                   <span className="absolute bottom-8 md:bg-black mx-1 px-1 rounded-xl md:text-gray-300 px-2">soon</span>
                 </a>
                 <div className="top">
@@ -110,21 +110,29 @@ export default function Home() {
         <div className="md:w-1/2 px-8 md:px-0">
           {/* First column content */}
           <h2 className="font-monument text-3xl md:text-5xl py-6">CREON PASS <br></br>NFT</h2>
-          <h3 className="font-satoshibold text-md gradient-text my-8">The Creon NFT pass unlocks access to AI projects, the Creon  <br></br>
-            launchpad, and a ticket to generate passive income through AI- <br></br>
-            driven tools.
+          <h3 className="font-satoshibold text-md gradient-text my-8">The Creon NFT pass unlocks access to AI projects, the Creon
+            <br></br> launchpad, and a ticket to generate passive income through AI- <br></br>driven tools.
           </h3>
-          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">Pre-launch investment opportunities for upcoming AI projects.</p>
-          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">Free and early access to Creon built AI projects.</p>
-          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">Higher allocation limits on the Creon AI Launchpad.</p>
-          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">Revenue share distribution from Creon built AI projects.</p>
-          <button className="w-full md:w-2/3 font-satoshibold mt-4 gradient-bg hover:bg-blue-700 text-white font-bold py-2 px-4 rounded lg:mt-8">Buy Creon Pass</button>
+          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">
+            Pre-launch investment opportunities for upcoming AI projects.
+          </p>
+          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">
+            Free and early access to Creon built AI projects.
+          </p>
+          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">
+            Higher allocation limits on the Creon AI Launchpad.
+          </p>
+          <p className="font-satoshiregular text-sm text-gray-400 my-2 py-2 box-sm-shadow">
+            Revenue share distribution from Creon built AI projects.
+            </p>
+          <button className="w-full md:w-2/3 font-satoshibold mt-4 gradient-bg hover:bg-blue-700 text-white font-bold py-2 px-4
+           rounded lg:mt-8">Buy Creon Pass
+          </button>
         </div>
         <div className="md:w-1/2 pt-6 md:pt-0">
           {/* Second column content */}
           <video className="w-full md:object-cover md:h-full" autoPlay muted loop>
             <source src="/videos/nft-video.mp4" type="video/mp4" />
-            {/* Add additional video sources for browser compatibility */}
           </video>
         </div>
       </div>
@@ -162,7 +170,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-row w-full mt-24 mb-8">
         <div className="md:w-1/2 lg:w-3/5 py-10">
           {/* Heading and image */}
-          <h2 className="font-monument text-xl md:text-28 mb-4 px-8 md:px-0 leading-tight lg:px-4">
+          <h2 className="font-monument text-xl md:text-26 mb-4 px-8 md:px-0 leading-tight lg:px-4">
             OUR VISION IS TO<br></br>SUPPORT THE INNOVATION<br></br>OF AI BLOCKCHAIN<br></br>
           PROJECTS <span className="gradient-text">WHILE<br></br> PRIORITIZING COMMUNITIES<br></br> AND DEMOCRATIZING
           <br></br> PROFITS</span></h2>
@@ -315,7 +323,7 @@ export default function Home() {
             <div className="md:flex">
               {/* First column (3/4 width) */}
               <div className="md:w-3/4 p-6 lg:px-8">
-                <h3 className="font-monument text-lg lg:text-29 mb-2">AI PROSPECTS, MARKET SIZE, AND<br></br> DEVELOPMENT PACE</h3>
+                <h3 className="font-monument text-lg lg:text-28 mb-2">AI PROSPECTS, MARKET SIZE, AND<br></br> DEVELOPMENT PACE</h3>
                 <p className="font-satoshiregular text-gray-400 text-sm">The AI market is one of the most dynamically growing areas of technology. According to 
                 reports, the global AI market is expected to reach $190.61 billion by 2025, with a CAGR (Compound Annual Growth Rate)
                 of 36.6%. The key drivers behind this growth include advancements in machine learning, increasing demand for big data
@@ -333,7 +341,7 @@ export default function Home() {
             <div className="md:flex">
               {/* First column (3/4 width) */}
               <div className="md:w-3/4 p-6 lg:px-8">
-                <h3 className="font-monument text-lg lg:text-29 mb-2">AI TOOLS AND MARKET</h3>
+                <h3 className="font-monument text-lg lg:text-28 mb-2">AI TOOLS AND MARKET</h3>
                 <p className="font-satoshiregular text-gray-400 text-sm">AI tools refer to the technologies and software that enable computer systems to perform 
                 tasks usually requiring human intellect. The market for these tools is dynamic and diverse, encompassing areas such 
                 as Natural Language Processing (NLP), machine learning, computer vision, and robotics. With a wide range of 
@@ -351,7 +359,7 @@ export default function Home() {
             <div className="md:flex">
               {/* First column (3/4 width) */}
               <div className="md:w-3/4 p-6 lg:px-8">
-                <h3 className="font-monument text-lg lg:text-29 mb-2">AI, CRYPTO, AND NFT MARKET</h3>
+                <h3 className="font-monument text-lg lg:text-28 mb-2">AI, CRYPTO, AND NFT MARKET</h3>
                 <p className="font-satoshiregular text-gray-400 text-sm">Artificial Intelligence and blockchain technology are two groundbreaking areas leading new
                 technological innovations. The combination of these two technologies creates intriguing possibilities. For instance,
                   Non-Fungible Tokens (NFTs) can leverage AI to create unique digital artworks or to provide exclusive AI-based 
