@@ -357,9 +357,9 @@ export default function Home() {
               <p className="font-satoshiregular">© Creon 2023. All rights reserved.</p>
             </div>
             <div className="hidden md:w-1/3 md:flex space-x-4">
-              <img src="/images/telegram.png" width={30} />
-              <img src="/images/discord.png" width={30} />
-              <img src="/images/twitter.png" width={30} />
+              <img src="/images/Telegram.png" width={30} />
+              <img src="/images/Discord.png" width={30} />
+              <img src="/images/Twitter.png" width={30} />
             </div>
             <div className="flex md:w-1/3 space-x-2 justify-end items-center pt-4 md:pt-0">
               <p className="font-satoshiregular">Powered by</p>
