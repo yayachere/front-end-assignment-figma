@@ -12,8 +12,6 @@ export default function Home() {
         var textOverlay = document.querySelector('.text-overlay');
         var navBar = document.querySelector('.navbar');
 
-
-
         openSideBar.addEventListener('click', ()=> {
           sideBar.classList.add('nav-links-open');
           textOverlay.classList.remove('z-10');
@@ -71,9 +69,9 @@ export default function Home() {
                   </a> 
                 </div>
                 <div className="bottom w-full flex flex-row justify-around">
-                  <img src="/images/telegram.png" className="h-8" />
-                  <img src="/images/discord.png" className="h-8" />
-                  <img src="/images/twitter.png" className="h-8" />
+                  <img src="/images/Telegram.png" className="h-8" />
+                  <img src="/images/Discord.png" className="h-8" />
+                  <img src="/images/Twitter.png" className="h-8" />
                 </div> 
               </div>
           </nav>
@@ -133,14 +131,14 @@ export default function Home() {
               <source src="/videos/creon-logo.mp4" type="video/mp4" />
             </video>
           </div>     
-          <div className="md:w-1/3 mt-4 md:mt-0 px-0 px-0 md:px-4 borer border-l border-r 
+          <div className="w-full md:w-1/3 mt-4 md:mt-0 px-4 md:px-0 lg:px-4 borer border-l border-r 
           border-gray-900">
             {/* Second subsection with text description */}
-            <h3 className="font-satoshibold text-md mb-4">The dynamic community driven<br></br> business model of the future.</h3>
-            <p className="font-satoshiregular text-xs text-gray-300">At Creon, we blend the power of AI tools with the<br></br> dynamic crypto and NFT markets, 
-            utilizing an<br></br> innovative business model to drive profitability.<br></br> This approach empowers our community, 
-            as our<br></br> NFT and token holders directly benefit from the<br></br> growth and prosperity of the Creon network,<br></br>
-             creating a win-win scenario for both our<br></br> community and for the projects we launch.</p>
+            <h3 className="font-satoshibold md:font-satoshiregular text-md md:text-sm lg:text-md mb-4">The dynamic community driven<br></br> business model of the future.</h3>
+            <p className="font-satoshiregular text-xs text-gray-300">At Creon, we blend the power of AI tools with the dynamic crypto and NFT markets, 
+            utilizing an innovative business model to drive profitability. This approach empowers our community, 
+            as our NFT and token holders directly benefit from the growth and prosperity of the Creon network,
+             creating a win-win scenario for both our community and for the projects we launch.</p>
           </div>
         </div>
       </div>
@@ -357,9 +355,9 @@ export default function Home() {
               <p className="font-satoshiregular">© Creon 2023. All rights reserved.</p>
             </div>
             <div className="hidden md:w-1/3 md:flex space-x-4">
-              <img src="/images/telegram.png" width={30} />
-              <img src="/images/discord.png" width={30} />
-              <img src="/images/twitter.png" width={30} />
+              <img src="/images/Telegram.png" width={30} />
+              <img src="/images/Discord.png" width={30} />
+              <img src="/images/Twitter.png" width={30} />
             </div>
             <div className="flex md:w-1/3 space-x-2 justify-end items-center pt-4 md:pt-0">
               <p className="font-satoshiregular">Powered by</p>
