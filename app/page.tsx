@@ -10,17 +10,14 @@ export default function Home() {
         var closeSidebar = document.querySelector('.sidebarCloseBtn');
         var sideBar = document.querySelector('.nav-links');
         var textOverlay = document.querySelector('.text-overlay');
-        var navBar = document.querySelector('.navbar');
 
         openSideBar.addEventListener('click', ()=> {
           sideBar.classList.add('nav-links-open');
           textOverlay.classList.remove('z-10');
-          navBar.style.overflow = 'visible';
         });
         closeSidebar.addEventListener('click', ()=> {
             sideBar.classList.remove('nav-links-open');
             textOverlay.classList.add('z-10');
-            navBar.style.overflow = 'hidden';
         });
         
         `}
@@ -41,7 +38,7 @@ export default function Home() {
           <nav className="navbar absolute font-satoshibold top-2 left-0 right-0 flex justify-between items-center 
             md:p-4 z-10 md:px-4 z-20 lg:mx-6">
             {/* Logo */}
-            <img src="/images/logo.png" alt="Logo" className="h-6" />
+            <img src="/images/Logo.png" alt="Logo" className="h-6" />
             {/* SideBar toggler for small screens */}
             <a href="#" className="sidebarOpenBtn text-white  p-2">
               <img src="/images/bars.svg" alt="bars icons" className="h-8" />
