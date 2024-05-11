@@ -9,7 +9,25 @@ export default function Home() {
         var openSideBar = document.querySelector('.sidebarOpenBtn');
         var closeSidebar = document.querySelector('.sidebarCloseBtn');
         var sideBar = document.querySelector('.nav-links');
-        var textOverlay = document.querySelector('.text-overlay');       
+        var textOverlay = document.querySelector('.text-overlay');  
+        
+        document.addEventListener('DOMContentLoaded', function() {
+              
+            const accordions = document.querySelectorAll
+            ('.accordion-header');
+
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', function(){
+                    const content = this.nextElementSibling;
+
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
 
         openSideBar.addEventListener('click', ()=> {
           sideBar.classList.add('nav-links-open');
@@ -181,7 +199,7 @@ export default function Home() {
                 Transparent & Fair Decentralized <br></br>Earnings
                 <img src="/images/down-arrow.svg" alt="down-icon" className="absolute h-3 right-3 top-6"/>
               </h3>
-              <div className="accordion-content hidden font-satoshiregular lg:text-xs text-gray-300 me-0 lg:ml-0 pl-8 md:pl-0 lg:pl-24">
+              <div className="accordion-content font-satoshiregular lg:text-xs text-gray-300 me-0 lg:ml-0 pl-8 md:pl-0 lg:pl-24">
                 {/* Accordion 2 content */}
                 <p>At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and 
                   investment opportunities. Our community actively contributes to the growth and profitability of these projects,
@@ -197,7 +215,7 @@ export default function Home() {
                 Launching the <br></br>future
                 <img src="/images/down-arrow.svg" alt="down-icon" className="absolute h-3 right-3 top-6"/>
               </h3>
-              <div className="accordion-content hidden font-satoshiregular lg:text-xs text-gray-300 me-0 lg:ml-0 pl-8 md:pl-0 lg:pl-24">
+              <div className="accordion-content font-satoshiregular lg:text-xs text-gray-300 me-0 lg:ml-0 pl-8 md:pl-0 lg:pl-24">
                 {/* Accordion 3 content */}
                 <p>At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and 
                   investment opportunities. Our community actively contributes to the growth and profitability of these projects,
@@ -213,7 +231,7 @@ export default function Home() {
                 Limitless Possibilities of AI<br></br>& CryptoGrowth            
                 <img src="/images/down-arrow.svg" alt="down-icon" className="absolute h-3 right-3 top-6"/>
               </h3>
-              <div className="accordion-content hidden font-satoshiregular lg:text-xs text-gray-300 me-0 lg:ml-0 pl-8 md:pl-0 lg:pl-24">
+              <div className="accordion-content font-satoshiregular lg:text-xs text-gray-300 me-0 lg:ml-0 pl-8 md:pl-0 lg:pl-24">
                 {/* Accordion 4 content */}
                 <p>At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and 
                   investment opportunities. Our community actively contributes to the growth and profitability of these projects,

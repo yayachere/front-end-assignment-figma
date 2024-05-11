@@ -39,6 +39,9 @@ body {
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1));
 }
+.accordion-content {
+  display: none;
+}
 
 .gradient-bg {
   background: linear-gradient(to right, var(--gradient-from) 50%, var(--gradient-to));
