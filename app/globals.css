@@ -71,7 +71,6 @@ body {
   border-bottom-right-radius: 6px;
 }
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -125,7 +124,7 @@ body {
   }
   .nav-links .bottom {
       position: absolute;
-      bottom: 20px;
+      bottom: 60px;
       left: 0;
       display: flex;
       justify-content: space-around;

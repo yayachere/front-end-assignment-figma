@@ -9,7 +9,7 @@ export default function Home() {
         var openSideBar = document.querySelector('.sidebarOpenBtn');
         var closeSidebar = document.querySelector('.sidebarCloseBtn');
         var sideBar = document.querySelector('.nav-links');
-        var textOverlay = document.querySelector('.text-overlay');
+        var textOverlay = document.querySelector('.text-overlay');       
 
         openSideBar.addEventListener('click', ()=> {
           sideBar.classList.add('nav-links-open');
