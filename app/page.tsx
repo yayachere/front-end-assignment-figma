@@ -43,7 +43,7 @@ export default function Home() {
           <nav className="navbar absolute font-satoshibold top-2 left-0 right-0 flex justify-between items-center 
             md:p-4 z-10 md:px-4 z-20 lg:mx-6">
             {/* Logo */}
-            <img src="/images/logo.png" alt="Logo" className="h-6" />
+            <img src="/images/Logo.png" alt="Logo" className="h-6" />
             {/* SideBar toggler for small screens */}
             <a href="#" className="sidebarOpenBtn text-white  p-2">
               <img src="/images/bars.svg" alt="bars icons" className="h-8" />
@@ -71,9 +71,9 @@ export default function Home() {
                   </a> 
                 </div>
                 <div className="bottom w-full flex flex-row justify-around">
-                  <img src="/images/telegram.png" className="h-8" />
-                  <img src="/images/discord.png" className="h-8" />
-                  <img src="/images/twitter.png" className="h-8" />
+                  <img src="/images/Telegram.png" className="h-8" />
+                  <img src="/images/Discord.png" className="h-8" />
+                  <img src="/images/Twitter.png" className="h-8" />
                 </div> 
               </div>
           </nav>
