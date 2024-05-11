@@ -10,19 +10,16 @@ export default function Home() {
         var closeSidebar = document.querySelector('.sidebarCloseBtn');
         var sideBar = document.querySelector('.nav-links');
         var textOverlay = document.querySelector('.text-overlay');
-        var navBar = document.querySelector('.navbar');
 
 
 
         openSideBar.addEventListener('click', ()=> {
           sideBar.classList.add('nav-links-open');
           textOverlay.classList.remove('z-10');
-          navBar.style.overflow = 'visible';
         });
         closeSidebar.addEventListener('click', ()=> {
             sideBar.classList.remove('nav-links-open');
             textOverlay.classList.add('z-10');
-            navBar.style.overflow = 'hidden';
         });
         
         `}
